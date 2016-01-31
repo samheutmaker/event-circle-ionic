@@ -1,0 +1,29 @@
+
+
+
+  <ion-view view-title="List" name="list">
+        <ion-content>
+            
+        <div class="result-page-container">
+                <div class="filter-container">asdfasd</div>
+            	<div  class="results-list-container">
+
+                    
+
+            		<div class="result-list-item" ng-repeat="item in allEvents | reverse">
+            			<div class="result-list-item-name"><h1>{{ item.eventName }}</h1></div>
+            			<div class="result-list-item-location-name"> {{item.locationName}} </div>
+            			<div class="result-list-item-date"> {{item.date.start}} - {{item.date.end}} </div>
+                        <div class="result-list-item-tag-container"> 
+                            <div class="result-list-item-tag">Music</div>
+                             <div class="result-list-item-tag">Live Music</div>
+                              <div class="result-list-item-tag">21+</div>
+                               <div class="result-list-item-tag">Sports</div>
+                         </div>
+            		</div>
+            	
+            </div>
+        </div>
+
+        </ion-content>
+      </ion-view>
